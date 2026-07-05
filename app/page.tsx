@@ -10,6 +10,8 @@ import Reviews from "@/components/home/Reviews";
 import FAQ from "@/components/home/FAQ";
 import Contact from "@/components/home/Contact";
 
+import FloatingButtons from "@/components/layout/FloatingButtons";
+
 export default function Home() {
   return (
     <>
@@ -25,6 +27,8 @@ export default function Home() {
         <FAQ />
         <Contact />
       </main>
+
+      <FloatingButtons />
 
       <Footer />
     </>

@@ -1,11 +1,17 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/90 backdrop-blur-lg">
       <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
 
-        <div className="text-3xl font-black">
-          Nova<span className="text-yellow-600">Rem</span>
-        </div>
+        <Image
+  src="/images/icons/logo.jpg"
+  alt="NovaRem"
+  width={180}
+  height={60}
+  className="h-14 w-auto"
+/>
 
         <nav className="hidden lg:flex items-center gap-8 font-medium">
 

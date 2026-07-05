@@ -8,9 +8,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "NovaRem | Ремонт квартир под ключ",
+  title: "NovaRem | Будівництво та ремонт під ключ",
   description:
-    "Профессиональный ремонт квартир, домов и коммерческих помещений в Киеве.",
+    "Будівництво, ремонт квартир, будинків, офісів та демонтажні роботи під ключ у Києві та по Україні.",
 };
 
 export default function RootLayout({
