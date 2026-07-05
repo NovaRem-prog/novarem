@@ -1,8 +1,50 @@
+"use client";
+
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    service: "Ремонт квартири",
+    message: "",
+  });
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_t5xfhme",
+        "template_p45jvas",
+        {
+          name: form.name,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+          email: "novareminfo@gmail.com",
+        },
+        "ktJrWSi1iXzVqoP9k"
+      )
+      .then(() => {
+        alert("Заявку відправлено!");
+        setForm({
+          name: "",
+          phone: "",
+          service: "Ремонт квартири",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Помилка відправки.");
+      });
+  };
+
   return (
     <section id="contact" className="py-24 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-
         <h2 className="text-5xl font-black text-center">
           Зв'яжіться з нами
         </h2>
@@ -12,30 +54,34 @@ export default function Contact() {
         </p>
 
         <div className="max-w-2xl mx-auto bg-white rounded-3xl p-8 shadow-xl">
-
-          <form
-            action="https://formsubmit.co/novareminfo@gmail.com"
-            method="POST"
-            className="space-y-5"
-          >
+          <form onSubmit={sendEmail} className="space-y-5">
             <input
               type="text"
-              name="name"
               placeholder="Ваше ім'я"
               required
+              value={form.name}
+              onChange={(e) =>
+                setForm({ ...form, name: e.target.value })
+              }
               className="w-full rounded-xl border p-4"
             />
 
             <input
               type="tel"
-              name="phone"
               placeholder="Ваш телефон"
               required
+              value={form.phone}
+              onChange={(e) =>
+                setForm({ ...form, phone: e.target.value })
+              }
               className="w-full rounded-xl border p-4"
             />
 
             <select
-              name="service"
+              value={form.service}
+              onChange={(e) =>
+                setForm({ ...form, service: e.target.value })
+              }
               className="w-full rounded-xl border p-4"
             >
               <option>Ремонт квартири</option>
@@ -47,28 +93,13 @@ export default function Contact() {
             </select>
 
             <textarea
-              name="message"
-              placeholder="Опишіть ваш проєкт"
               rows={5}
+              placeholder="Опишіть ваш проєкт"
+              value={form.message}
+              onChange={(e) =>
+                setForm({ ...form, message: e.target.value })
+              }
               className="w-full rounded-xl border p-4"
-            />
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="Нова заявка з сайту NovaRem"
-            />
-
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            />
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://novarem.com.ua"
             />
 
             <button
@@ -78,9 +109,7 @@ export default function Contact() {
               Отримати консультацію
             </button>
           </form>
-
         </div>
-
       </div>
     </section>
   );
