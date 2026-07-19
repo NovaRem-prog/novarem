@@ -1,22 +1,25 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function Advantages() {
+  const t = useTranslations("advantages");
+
   const items = [
-    "Фіксований кошторис",
-    "Дотримання термінів",
-    "Гарантія на роботи",
-    "Повний цикл робіт",
+    t("estimate"),
+    t("deadline"),
+    t("warranty"),
+    t("turnkey"),
   ];
 
   return (
     <section className="py-24 bg-black text-white">
-
       <div className="max-w-7xl mx-auto px-6">
-
         <h2 className="text-5xl font-black">
-          Чому NovaRem
+          {t("title")}
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-
           {items.map((item) => (
             <div
               key={item}
@@ -27,11 +30,8 @@ export default function Advantages() {
               </h3>
             </div>
           ))}
-
         </div>
-
       </div>
-
     </section>
   );
 }

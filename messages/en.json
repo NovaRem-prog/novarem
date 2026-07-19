@@ -1,0 +1,107 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contacts",
+    "consultation": "Consultation"
+  },
+  "hero": {
+  "badge": "Construction • Renovation • Demolition",
+  "title1": "Construction,",
+  "title2": "Renovation & Demolition",
+  "title3": "Turnkey",
+  "description": "Complete construction and renovation services for apartments, houses, offices and commercial properties.",
+  "calculate": "Calculate Cost",
+  "portfolio": "Our Projects",
+
+  "cardTitle": "NovaRem",
+  "card1": "Free Site Inspection",
+  "card2": "Fixed Price Estimate",
+  "card3": "Contract & Warranty"
+},
+  "services": {
+  "title": "Complete Range of Services",
+  "description": "We perform every stage of construction and renovation on a turnkey basis.",
+
+  "apartment": "Apartment Renovation",
+  "house": "House Renovation",
+  "commercial": "Commercial Renovation",
+  "demolition": "Demolition Works",
+  "rough": "Rough Construction",
+  "electrical": "Electrical Installation",
+  "plumbing": "Plumbing",
+  "finishing": "Finishing Works",
+
+  "apartmentDesc": "Complete apartment renovation from rough construction to premium finishing.",
+  "houseDesc": "Turnkey construction, reconstruction and renovation of private houses.",
+  "commercialDesc": "Renovation of offices, shops, restaurants and commercial buildings.",
+  "demolitionDesc": "Fast and safe demolition services with professional debris removal.",
+  "roughDesc": "All rough construction work completed according to modern building standards.",
+  "electricalDesc": "Installation, replacement and modernization of electrical systems.",
+  "plumbingDesc": "Professional installation of plumbing, water supply and sewage systems.",
+  "finishingDesc": "High-quality interior finishing using modern materials and technologies."
+  },
+  "advantages": {
+    "title": "Why NovaRem",
+    "estimate": "Fixed Estimate",
+    "deadline": "On-Time Delivery",
+    "warranty": "Work Warranty",
+    "turnkey": "Full Turnkey Service"
+  },
+  "portfolio": {
+  "title": "Our Projects",
+  "subtitle": "A selection of our completed construction and renovation projects.",
+  "button": "View All Projects",
+  "consultation": "Get Consultation"
+  },
+  "process": {
+    "title": "How We Work",
+    "step1": "Request",
+    "step2": "Site Visit",
+    "step3": "Estimate",
+    "step4": "Contract Signing",
+    "step5": "Construction Works",
+    "step6": "Project Delivery"
+  },
+  "reviews": {
+  "title": "Customer Reviews",
+"subtitle": "Share your experience with NovaRem.",
+"name": "Your name",
+"comment": "Comment (optional)",
+"button": "Leave a review"
+},
+"faq": {
+  "title": "Frequently Asked Questions",
+  "subtitle": "Answers to the questions our clients ask most often.",
+  "question1": "Do you provide a warranty?",
+  "answer1": "Yes. We provide an official warranty for all completed work, which is specified in the contract.",
+  "question2": "Do you work with commercial properties?",
+  "answer2": "Yes. We renovate offices, shops, restaurants, warehouses and other commercial buildings.",
+  "question3": "Can I order demolition only?",
+  "answer3": "Yes. We carry out both complete renovation projects and separate demolition works.",
+  "question4": "How quickly can you start?",
+  "answer4": "After approving the estimate and signing the contract, we can begin work as soon as possible."
+},
+"contact": {
+  "title": "Contact Us",
+  "subtitle": "Leave your request and we will contact you shortly.",
+  "name": "Your Name",
+  "phone": "Your Phone",
+  "select": "Select a service",
+  "service1": "Apartment Renovation",
+  "service2": "House Renovation",
+  "service3": "Office Renovation",
+  "service4": "Commercial Property",
+  "service5": "Demolition Works",
+  "service6": "Other",
+  "message": "Describe your project",
+  "button": "Get Consultation",
+  "success": "Your request has been sent successfully!",
+  "error": "Failed to send the request. Please try again."
+},
+"footer": {
+  "description": "Complete construction and renovation services. From demolition to turnkey project delivery.",
+  "rights": "All rights reserved."
+}
+}
